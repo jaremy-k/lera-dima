@@ -4,7 +4,7 @@ services:
       context: .
       target: runner
     ports:
-      - "${PORT:-3120}:3120"
+      - "${PORT:-3120}:3000"
     environment:
       NODE_ENV: production
       NEXT_PUBLIC_SITE_URL: ${NEXT_PUBLIC_SITE_URL:-http://localhost:3120}
@@ -17,7 +17,7 @@ services:
       context: .
       target: dev
     ports:
-      - "${PORT:-3120}:3120"
+      - "${PORT:-3120}:3000"
     environment:
       NODE_ENV: development
       NEXT_PUBLIC_SITE_URL: ${NEXT_PUBLIC_SITE_URL:-http://localhost:3120}

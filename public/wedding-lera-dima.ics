@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Lera and Dima Wedding//Wedding Invitation//RU
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:lera-dima-wedding-20260909@lera-dima.local
+DTSTAMP:20260619T000000Z
+DTSTART;TZID=Europe/Moscow:20260909T173000
+DTEND;TZID=Europe/Moscow:20260909T235900
+SUMMARY:Свадьба Леры и Димы
+LOCATION:Дом Культур, Москва, Большой Сухаревский пер., 25, стр. 1
+DESCRIPTION:17:30 сбор гостей. 18:00 торжество в Доме Культур. Венчание в церкви: время и точное место будут в Telegram-чате: https://t.me/+BxAbcckn-4xmZDQy\nКарта: https://yandex.ru/maps/org/dom_kultur/131157051825?si=fv5aq0xjqxu27w8p84bcxnfrbg
+URL:https://t.me/+BxAbcckn-4xmZDQy
+END:VEVENT
+END:VCALENDAR

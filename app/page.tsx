@@ -104,7 +104,7 @@ export default function Home() {
             alt=""
             aria-hidden="true"
             revealFrom="right"
-            motion="spin"
+            motion="float"
             delay={120}
           />
 

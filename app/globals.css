@@ -346,6 +346,12 @@ a {
   top: -48px;
   width: 72px;
   transform: rotate(2deg);
+  transform-origin: top center;
+}
+
+.animDecor.decorDisco.is-visible {
+  animation: none;
+  transform: rotate(2deg);
 }
 
 .heroNames {

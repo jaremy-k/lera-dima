@@ -1,11 +1,31 @@
 import type { Metadata } from "next";
-import { Caveat } from "next/font/google";
+import localFont from "next/font/local";
+import { Caveat, Montserrat_Alternates } from "next/font/google";
 import "./globals.css";
 
 const headingScript = Caveat({
   weight: ["500", "600", "700"],
   subsets: ["latin", "cyrillic"],
   variable: "--font-heading",
+  display: "swap",
+});
+
+const officialHeading = localFont({
+  src: "./fonts/Pierrot.ttf",
+  variable: "--font-official-heading",
+  display: "swap",
+});
+
+const officialAccent = localFont({
+  src: "./fonts/7111.ttf",
+  variable: "--font-official-accent",
+  display: "swap",
+});
+
+const officialText = Montserrat_Alternates({
+  weight: ["400", "500", "600", "700"],
+  subsets: ["latin", "cyrillic"],
+  variable: "--font-montserrat-alternates",
   display: "swap",
 });
 
@@ -45,7 +65,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="ru" className={headingScript.variable}>
+    <html
+      lang="ru"
+      className={`${headingScript.variable} ${officialHeading.variable} ${officialAccent.variable} ${officialText.variable}`}
+    >
       <body>{children}</body>
     </html>
   );
